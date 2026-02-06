@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Setup Guide - Valiant Management Services</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f5f5;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #1a365d 0%, #0a1628 100%);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      margin-bottom: 30px;
+      border-radius: 10px;
+    }
+    
+    header h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    
+    header p {
+      opacity: 0.9;
+    }
+    
+    .section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .section h2 {
+      color: #1a365d;
+      border-bottom: 3px solid #c53030;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    
+    .step {
+      background: #f8f9fa;
+      padding: 15px;
+      margin: 15px 0;
+      border-left: 4px solid #c53030;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .step h3 {
+      color: #c53030;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    
+    code {
+      background: #2d3748;
+      color: #48bb78;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+    }
+    
+    pre {
+      background: #2d3748;
+      color: #e2e8f0;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    
+    pre code {
+      background: transparent;
+      padding: 0;
+      color: inherit;
+    }
+    
+    .file-structure {
+      background: #1a202c;
+      color: #68d391;
+      padding: 15px;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 14px;
+    }
+    
+    .file-structure .folder {
+      color: #63b3ed;
+    }
+    
+    .file-structure .file {
+      color: #68d391;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    
+    th {
+      background: #1a365d;
+      color: white;
+    }
+    
+    tr:nth-child(even) {
+      background: #f8f9fa;
+    }
+    
+    .checkbox-list {
+      list-style: none;
+    }
+    
+    .checkbox-list li {
+      padding: 8px 0;
+      padding-left: 30px;
+      position: relative;
+    }
+    
+    .checkbox-list li::before {
+      content: '☐';
+      position: absolute;
+      left: 0;
+      color: #c53030;
+      font-size: 18px;
+    }
+    
+    .important {
+      background: #fff5f5;
+      border: 1px solid #fed7d7;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+    
+    .important::before {
+      content: '⚠️ Important: ';
+      font-weight: bold;
+      color: #c53030;
+    }
+    
+    .success {
+      background: #f0fff4;
+      border: 1px solid #9ae6b4;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+    
+    .success::before {
+      content: '✅ ';
+    }
+    
+    .download-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #c53030 0%, #9b2c2c 100%);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 5px;
+      transition: transform 0.2s;
+    }
+    
+    .download-btn:hover {
+      transform: translateY(-2px);
+    }
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🛡️ Logo Setup Guide</h1>
+      <p>Valiant Management Services - Website Logo Implementation</p>
+    </header>
+    
+    <!-- Step 1: Download -->
+    <div class="section">
+      <h2>Step 1: Download the Logo</h2>
+      
+      <p>Download the official logo file from the source:</p>
+      
+      <div style="margin: 20px 0; text-align: center;">
+        <a href="https://valiantmanagementservices.com/wp-content/uploads/2026/01/Valiant-Management-Service.png" 
+           class="download-btn" 
+           download="logo.png"
+           target="_blank">
+          📥 Download Logo (PNG)
+        </a>
+      </div>
+      
+      <div class="important">
+        Save the file as <code>logo.png</code> (lowercase, no spaces).
+      </div>
+    </div>
+    
+    <!-- Step 2: Folder Structure -->
+    <div class="section">
+      <h2>Step 2: Create Folder Structure</h2>
+      
+      <p>Place the logo files inside the <code>public/images</code> folder:</p>
+      
+      <div class="file-structure">
+        <span class="folder">📁 public/</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="folder">📁 images/</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="file">📄 logo.png</span> &nbsp; ← Main logo for Navbar & Footer<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="file">📄 favicon.png</span> &nbsp; ← Square icon for browser tab (32x32px)
+      </div>
+      
+      <div class="step">
+        <h3>How to Create a Favicon</h3>
+        <ol>
+          <li>Open the logo in any image editor (Photoshop, Paint, Canva)</li>
+          <li>Crop/resize to a square (32x32 pixels or 64x64 pixels)</li>
+          <li>Save as <code>favicon.png</code></li>
+          <li>Place in <code>public/images/</code> folder</li>
+        </ol>
+      </div>
+    </div>
+    
+    <!-- Step 3: Navbar Code -->
+    <div class="section">
+      <h2>Step 3: Navbar Logo Code</h2>
+      
+      <p>The logo in navbar is implemented in <code>src/components/Header.tsx</code>:</p>
+      
+      <pre><code>&lt;Link to="/"&gt;
+  &lt;img 
+    src="/images/logo.png" 
+    alt="Valiant Management Services" 
+    className="nav-logo"
+  /&gt;
+&lt;/Link&gt;</code></pre>
+      
+      <p style="margin-top: 15px;">CSS for responsive logo (in <code>src/index.css</code>):</p>
+      
+      <pre><code>/* Navbar Logo - Responsive */
+.nav-logo {
+  max-height: 40px;    /* Mobile */
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .nav-logo {
+    max-height: 56px;  /* Tablet */
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-logo {
+    max-height: 64px;  /* Desktop */
+  }
+}</code></pre>
+    </div>
+    
+    <!-- Step 4: Footer Code -->
+    <div class="section">
+      <h2>Step 4: Footer Logo Code</h2>
+      
+      <p>The logo in footer is implemented in <code>src/components/Footer.tsx</code>:</p>
+      
+      <pre><code>&lt;Link to="/"&gt;
+  &lt;img 
+    src="/images/logo.png" 
+    alt="Valiant Management Services" 
+    className="footer-logo"
+  /&gt;
+&lt;/Link&gt;</code></pre>
+      
+      <pre><code>/* Footer Logo */
+.footer-logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}</code></pre>
+    </div>
+    
+    <!-- Step 5: Favicon -->
+    <div class="section">
+      <h2>Step 5: Favicon Setup</h2>
+      
+      <p>In <code>index.html</code>, add these lines inside the <code>&lt;head&gt;</code> section:</p>
+      
+      <pre><code>&lt;!-- Favicon - Browser Tab Icon --&gt;
+&lt;link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png"&gt;
+
+&lt;!-- Apple Touch Icon (for iOS) --&gt;
+&lt;link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png"&gt;
+
+&lt;!-- Fallback --&gt;
+&lt;link rel="shortcut icon" href="/images/favicon.png"&gt;</code></pre>
+    </div>
+    
+    <!-- Recommended Sizes -->
+    <div class="section">
+      <h2>Recommended Image Sizes</h2>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Usage</th>
+            <th>Recommended Size</th>
+            <th>Format</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Navbar Logo</td>
+            <td>300 x 80 px (or similar ratio)</td>
+            <td>PNG (with transparency)</td>
+          </tr>
+          <tr>
+            <td>Footer Logo</td>
+            <td>300 x 80 px</td>
+            <td>PNG (with transparency)</td>
+          </tr>
+          <tr>
+            <td>Favicon</td>
+            <td>32 x 32 px or 64 x 64 px</td>
+            <td>PNG or ICO</td>
+          </tr>
+          <tr>
+            <td>Apple Touch Icon</td>
+            <td>180 x 180 px</td>
+            <td>PNG</td>
+          </tr>
+          <tr>
+            <td>Open Graph (Social)</td>
+            <td>1200 x 630 px</td>
+            <td>PNG or JPG</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <!-- Final Checklist -->
+    <div class="section">
+      <h2>Final Checklist</h2>
+      
+      <ul class="checkbox-list">
+        <li>Logo file saved in <code>public/images/logo.png</code></li>
+        <li>Favicon file saved in <code>public/images/favicon.png</code></li>
+        <li>Logo visible in Navbar</li>
+        <li>Logo visible in Footer</li>
+        <li>Favicon visible in browser tab</li>
+        <li>Logo scales properly on mobile (test on phone)</li>
+        <li>Logo scales properly on tablet</li>
+        <li>Logo scales properly on desktop</li>
+        <li>No broken image icons</li>
+        <li>Logo links to homepage when clicked</li>
+      </ul>
+      
+      <div class="success">
+        After completing all steps, clear your browser cache (Ctrl+Shift+Delete) and refresh the page (Ctrl+F5) to see the changes.
+      </div>
+    </div>
+    
+    <!-- Troubleshooting -->
+    <div class="section">
+      <h2>Troubleshooting</h2>
+      
+      <div class="step">
+        <h3>Logo Not Showing?</h3>
+        <ol>
+          <li>Check file path is correct: <code>/images/logo.png</code></li>
+          <li>Ensure file is in <code>public/images/</code> folder</li>
+          <li>Verify file extension matches (<code>.png</code> not <code>.PNG</code>)</li>
+          <li>Clear browser cache and refresh</li>
+        </ol>
+      </div>
+      
+      <div class="step">
+        <h3>Favicon Not Updating?</h3>
+        <ol>
+          <li>Favicons are heavily cached by browsers</li>
+          <li>Try opening in Incognito/Private window</li>
+          <li>Clear all browser data (not just cache)</li>
+          <li>Try a different browser to confirm</li>
+        </ol>
+      </div>
+      
+      <div class="step">
+        <h3>Logo Too Large or Too Small?</h3>
+        <ol>
+          <li>Adjust the CSS max-height values</li>
+          <li>For navbar: Edit <code>.nav-logo</code> in CSS</li>
+          <li>For footer: Edit <code>.footer-logo</code> in CSS</li>
+          <li>Use responsive breakpoints for different screens</li>
+        </ol>
+      </div>
+    </div>
+    
+    <!-- Quick Commands -->
+    <div class="section">
+      <h2>Quick Commands</h2>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>Path / File</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Edit Navbar Logo</td>
+            <td><code>src/components/Header.tsx</code></td>
+          </tr>
+          <tr>
+            <td>Edit Footer Logo</td>
+            <td><code>src/components/Footer.tsx</code></td>
+          </tr>
+          <tr>
+            <td>Edit Favicon</td>
+            <td><code>index.html</code></td>
+          </tr>
+          <tr>
+            <td>Edit Logo CSS</td>
+            <td><code>src/index.css</code></td>
+          </tr>
+          <tr>
+            <td>Add Logo Files</td>
+            <td><code>public/images/</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <footer>
+      <p>© 2024 Valiant Management Services Pvt. Ltd. | Logo Setup Guide v1.0</p>
+    </footer>
+  </div>
+</body>
+</html>
