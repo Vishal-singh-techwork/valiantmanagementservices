@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <title>Valiant Management Services - Professional Security Guard Services</title>
+  <meta name="description"
+    content="Valiant Management Services provides professional security guard services, CCTV surveillance, event security, and comprehensive protection solutions across Delhi NCR." />
+  <meta name="keywords"
+    content="security guards, CCTV surveillance, event security, corporate security, personal security, housekeeping, Delhi, Noida, security services India" />
+  <meta name="author" content="Valiant Management Services Pvt. Ltd." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- PWA Meta Tags for iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Valiant Security" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <!-- Favicon - Multiple Formats for Best Compatibility -->
+  <link rel="icon" type="image/jpeg" sizes="32x32" href="/images/Valiant-Management-Service-fevicon.jpeg" />
+  <link rel="icon" type="image/jpeg" sizes="16x16" href="/images/Valiant-Management-Service-fevicon.jpeg" />
+  <link rel="icon" type="image/png" href="/images/Valiant-Management-Service.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/Valiant-Management-Service.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/Valiant-Management-Service.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/Valiant-Management-Service.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/Valiant-Management-Service.png" />
+  <link rel="shortcut icon" href="/images/Valiant-Management-Service-fevicon.jpeg" />
+
+  <!-- Fallback Favicon (if local not found) -->
+  <link rel="icon" type="image/png" href="/images/Valiant-Management-Service.png" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://valiantmanagementservices.com/" />
+  <meta property="og:title" content="Valiant Management Services - Professional Security Guard Services" />
+  <meta property="og:description"
+    content="Premier security solutions provider offering comprehensive protection services across India since 2010." />
+  <meta property="og:image" content="/images/Valiant-Management-Service.png" />
+  <meta property="og:site_name" content="Valiant Management Services" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Valiant Management Services - Security Guard Services" />
+  <meta name="twitter:description"
+    content="Professional security guard services, CCTV surveillance, and corporate security solutions." />
+  <meta name="twitter:image" content="/images/Valiant-Management-Service.png" />
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#1a365d" />
+  <meta name="msapplication-TileColor" content="#C41E3A" />
+  <meta name="msapplication-TileImage" content="/images/Valiant-Management-Service.png" />
+
+  <!-- Preload Critical Resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.pexels.com" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Splash Screens for iOS (Add to Home Screen) -->
+  <meta name="format-detection" content="telephone=yes" />
+  <link rel="apple-touch-startup-image" href="/images/Valiant-Management-Service.png" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+
+  <!-- Service Worker Registration -->
+  <script>
+    // Register Service Worker for PWA functionality
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function (registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          })
+          .catch(function (error) {
+            console.log('ServiceWorker registration failed: ', error);
+          });
+      });
+    }
+  </script>
+
+  <!-- Add to Home Screen Prompt (Optional - for custom install button) -->
+  <script>
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      // Prevent the mini-infobar from appearing on mobile
+      e.preventDefault();
+      // Stash the event so it can be triggered later
+      deferredPrompt = e;
+      console.log('PWA install prompt available');
+    });
+  </script>
+</body>
+
+</html>
